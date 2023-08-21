@@ -24,7 +24,7 @@
     "@mui/icons-material": "^5.14.3",
     "@mui/material": "^5.14.5",
     "@ory/client": "^1.1.47",
-    "@ory/elements-markup": "^0.0.1-beta.10",
+    "@ory/integrations": "^1.1.4",
     "@types/node": "20.5.0",
     "@types/react": "18.2.20",
     "@types/react-dom": "18.2.7",
@@ -40,7 +40,9 @@
     "typescript": "5.1.6"
   },
   "devDependencies": {
+    "@ory/elements": "^0.0.1-beta.10",
     "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-prettier": "^5.0.0",
     "husky": "^8.0.3",
     "lint-staged": "^14.0.0",
     "prettier": "^3.0.2",
