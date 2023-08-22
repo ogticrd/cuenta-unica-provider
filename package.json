@@ -40,7 +40,7 @@
     "typescript": "5.1.6"
   },
   "devDependencies": {
-    "@ory/elements": "^0.0.1-beta.10",
+    "@ory/elements": "0.0.1-beta.11",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-prettier": "^5.0.0",
     "husky": "^8.0.3",
