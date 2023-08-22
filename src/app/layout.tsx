@@ -18,7 +18,6 @@ import '@ory/elements/assets/jetbrains-mono-font.css';
 import '@ory/elements/style.css';
 
 import { Nav, ThemeProvider } from '@ory/elements';
-import Head from 'next/head';
 
 import { Inter } from 'next/font/google';
 
@@ -30,38 +29,40 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <Head>
-        <title>Next.js w/ Elements</title>
+    <html lang="es">
+      <head>
+        <title>Cuenta única</title>
         <link rel="icon" href="/ory.svg" />
-      </Head>
+      </head>
+
       <body className={inter.className}>
         <ThemeProvider themeOverrides={{}}>
           <Nav
-            className="main-nav"
-            navTitle="Next.js w/ Elements"
+            // main-nav
+            className="fixed left-0 top-0 z-10 w-64 !pt-8"
+            navTitle="Cuenta única"
             navSections={[
               {
-                title: 'Navigation',
+                title: 'Holi',
                 links: [
                   {
                     name: 'Home',
                     href: '/',
                   },
                   {
-                    name: 'Login',
+                    name: 'Iniciar sesión',
                     href: '/login',
                   },
                   {
-                    name: 'Register',
+                    name: 'Registrarse',
                     href: '/registration',
                   },
                   {
-                    name: 'Settings',
+                    name: 'Ajustes',
                     href: '/settings',
                   },
                   {
-                    name: 'Verification',
+                    name: 'Verificación',
                     href: '/verification',
                   },
                   {
@@ -69,23 +70,18 @@ export default function RootLayout({
                     href: '/recovery',
                   },
                   {
-                    name: 'Logout',
+                    name: 'Cerrar sesión',
                     href: '/logout',
                   },
                 ],
               },
             ]}
           />
-          <section className="contentContainer">
-            <div className="content">{children}</div>
+          <section className="md:w-[calc(100vw-16rem)] md:pl-[12em]">
+            {children}
           </section>
         </ThemeProvider>
       </body>
-    </html>
-  );
-  return (
-    <html lang="en">
-      <body className={inter.className}>{children}</body>
     </html>
   );
 }
